@@ -1,6 +1,7 @@
 import "../FillQuestionnaire/FillQuestionnaire.css"
 export default function FillQuestionnaire(){
     return(<>
+    <h1>FillQuestionnaire!!!</h1>
      <form>
         <label>:שם פרטי</label>
         <br/>

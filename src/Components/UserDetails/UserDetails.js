@@ -47,8 +47,9 @@ const user={
 
 
     return(<>
-    
+    <h1>UserDetails!!!</h1>
 <div className="card">
+    
     <p>שם מלא: {user.firstName} {user.lastName}</p>
     <p>גיל:{user.age}</p>
     <p>{user.status}</p>

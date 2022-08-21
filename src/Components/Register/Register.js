@@ -1,13 +1,39 @@
+import { useState } from "react";
 import "../Register/Register.css"
 export default function Register(){
+    const save=(e)=>{
+        e.preventDefaulte();
+
+        }
+let [userOrMatchmaker,setUserOrMatchmaker]=useState({
+    firstName:" ",
+    lastName:" ",
+    phone:" ",
+    age:null,
+    city:" ",
+    mail:" "
+});
+
+const change=(e)=>{
+let inpValue=e.target.value;
+let inpName=e.target.name;
+let inpType=e.target.type;
+if(inpType=="number")
+inpValue=+inpValue;
+let userOrmatch={...userOrMatchmaker};
+userOrmatch[inpName]=inpValue;
+setUserOrMatchmaker(userOrmatch);
+}
 
 
     return(<>
+    <h1>Register!!!</h1>
    <h1>הרשם</h1>
+   <form onSubmit={save}>
    <label>:שם פרטי </label>
    <br/>
 
-   <input type="text"/>
+   <input type="text" />
    <br/>
    <br/>
 
@@ -37,7 +63,7 @@ export default function Register(){
    <label>:מייל</label>
    <br/>
    <input type="text"/>
-  
+   </form>
 
     </>)
 }
