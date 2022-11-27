@@ -35,14 +35,31 @@ const userArr=[
 
     return(<>
     <h1>UserList!!!</h1>
-    <input type="text"/>
-    <input type="text"/>
-    <input type="text"/>
-    <input type="text"/>
-    <input type="text"/>
-    <input type="text"/>
-    <input type="text"/>
-    <input type="text"/>
+    <input type="text" placeholder="גיל"/>
+    <br/>
+    <br/>
+    <input type="text" placeholder="עד גיל"/>
+    <br/>
+    <br/>
+    <input type="text"placeholder="מצב משפחתי"/>
+    <br/>
+    <br/>
+    <input type="text" placeholder="ארץ לידה"/>
+    <br/>
+    <br/>
+    <input type="text" placeholder="כיסוי ראש מועדף"/>
+    <br/>
+    <br/>
+    <input type="text" placeholder=" שיוך מגזרי"/>
+    <br/>
+    <br/>
+    <input type="text" placeholder="מצב בריאותי"/>
+    <br/>
+    <br/>
+    <input type="text"  placeholder="מגובה"/>
+    <br/>
+    <br/>
+    <input type="text" placeholder="עד גובה"/>
 
     {userArr.map(u=><p key={u}>{u.firstName} | {u.lastName} | {u.age} | {u.status} | {u.city} | {u.height}
     | {u.healthCondition} | {u.look}</p>)}
