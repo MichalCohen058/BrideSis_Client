@@ -1,5 +1,5 @@
 import "../FillQuestionnaire/FillQuestionnaire.css"
-export default function FillQuestionnaire(){
+const FillQuestionnaire=()=>{
     return(<>
     <h1>FillQuestionnaire!!!</h1>
      <form>
@@ -198,3 +198,4 @@ export default function FillQuestionnaire(){
     </form>
     </>)
 }
+export default FillQuestionnaire;

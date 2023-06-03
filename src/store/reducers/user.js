@@ -47,7 +47,19 @@ const initialState = {
 }
 
 export const userReducer = (state = initialState, action) => {
-    
+    switch (action.type) {
+        // case "DELETE_PRODUCT":
+        //     let a = productsArr.filter(item => item.id != action.payload);
+        //     return {
+        //         ...state,
+        //         productsArr: a
+        //     }
+        case "SAVE_USER":
+            return {
+                currentUser: action.payload
+            }
+        default: return state;
+    }
 
 //         case "UPDATE_USER": {
 
